@@ -2,10 +2,10 @@
     min-height: 100vh;
 }
 
-/*#right {*/
-    /*height: 100vh;*/
-    /*overflow: scroll;*/
-/*}*/
+#right {
+    height: 100vh;
+    overflow: scroll;
+}
 
 .vertical-indent {
     line-height: 1.3;

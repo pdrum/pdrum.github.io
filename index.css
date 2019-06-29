@@ -33,9 +33,21 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
-@media print {
+@media print, (max-width: 992px) {
     #right {
         height: 100%;
         overflow: visible;
+    }
+
+    #left {
+        min-height: 400px;
+        padding: 50px;
+    }
+
+    #avatar {
+        padding: 50px;
+        vertical-align: middle;
+        width: 500px;
+
     }
 }

@@ -54,7 +54,9 @@ th, td {
         width: 500px;
 
     }
+}
 
+@media print {
     .print-only {
         display: block;
     }

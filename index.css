@@ -22,10 +22,6 @@
     width: 100%;
 }
 
-.print-only {
-    display: none;
-}
-
 table {
     border-collapse: collapse;
     width: 100%;
@@ -53,11 +49,5 @@ th, td {
         vertical-align: middle;
         width: 500px;
 
-    }
-}
-
-@media print {
-    .print-only {
-        display: block;
     }
 }

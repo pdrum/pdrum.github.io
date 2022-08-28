@@ -3,9 +3,8 @@ import * as styles from '../styles/blog-list-item.module.css'
 import {Button} from "react-bootstrap";
 import {Link} from "gatsby";
 
-export default function BlogListItem({
-  title, excerpt, thumbnailUrl, slug, createdAt
-}) {
+export default function BlogListItem({frontmatter}) {
+  const {title, excerpt, thumbnailUrl, slug, date} = frontmatter
   return <div className={`card text-dark ${styles.postContainer}`}>
     <h3 className="card-header text-center">{title}</h3>
     <div className={styles.imageContainer}>
@@ -24,7 +23,7 @@ export default function BlogListItem({
     </div>
 
     <div className="card-footer text-dark">
-      Created at: {createdAt}
+      Created at: {date.substring(date, date.indexOf('T')) }
     </div>
   </div>
 }

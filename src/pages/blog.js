@@ -4,21 +4,10 @@ import {graphql} from "gatsby";
 import BlogListItem from "../components/BlogListItem";
 
 export default function blog({data}) {
+  const frontmatters = data.allMarkdownRemark.nodes.map(markdown => markdown.frontmatter)
+  console.log('frontmatters', frontmatters)
   return <Layout>
-    <div>
-      {
-        data.allMarkdownRemark.nodes.forEach(markdown =>
-            <BlogListItem
-                createdAt={markdown.frontmatter.createdAt}
-                title={markdown.frontmatter.title}
-                thumbnailUrl={markdown.frontmatter.thumbnailUrl}
-                slug={markdown.frontmatter.slug}
-                excerpt={markdown.frontmatter.excerpt}
-                key={markdown.frontmatter.slug}
-            />
-        )
-      }
-    </div>
+    {frontmatters.map(frontmatter => <BlogListItem frontmatter={frontmatter}/>)}
   </Layout>
 }
 

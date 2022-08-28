@@ -20,17 +20,9 @@ export default function Home() {
             </div>
             <div className="card-body text-light">
               <p className="card-text text-light">
-                I'm a passionate software engineer, opting for
-                delivery of maintainable, reliable software that also meets the
-                deadlines.
-
-                In my day job I am known for conforming to software engineering
-                patterns and practices,
-                delivering things on time and a desire for solving new problems.
-                In my free time I try to
-                improve that reputation by contributing to open source projects,
-                learning new practices and
-                technologies, writing blog posts and doing side projects.
+                Skilled software engineer with 6+ years of experience,
+                developing maintainable tech solutions with a breadth of
+                technology stacks for sophisticated domains and large scale.
               </p>
             </div>
           </section>
@@ -69,6 +61,51 @@ export default function Home() {
             <div className="card-body">
               <div className="card-text">
                 <ul className="list-group">
+
+                  <li className="list-group-item">
+                    <div className="text-light">
+                      <h3>
+                        Software Engineer at Glovo <br/>
+                        <small>May 2021 till Now</small>
+                      </h3>
+                      <p>
+                        <a className="text-dark" href="https://glovoapp.com">Glovo</a>
+                        is a delivery company operating in more than 20 countries based in Barcelona.
+                      </p>
+                      <p>
+                        Projects:<br/>
+                        <ul>
+                          <li>
+                            Enable our data analysts to have better visibility
+                            on the assignment of orders to couriers by improving
+                            our data pipeline that uses technologies like Avro,
+                            Athena, S3, Glue, Kinesis, and Firehose.
+                          </li>
+                          <li>
+                            Stabilize our assignment model in Spain which is
+                            different from other countries due to regulations.
+                          </li>
+                          <li>
+                            Prioritize couriers for assignment to couriers based
+                            on their performance in some countries.
+                          </li>
+                          <li>
+                            Decrease cost per order by allowing freelance couriers
+                            to handle Glovo express orders
+                          </li>
+                        </ul>
+                      </p>
+                      <p>
+                        Tech Stack:<br/>
+                        <ul>
+                          <li>Java, Kotlin, Spring Boot</li>
+                          <li>Jenkins, Docker, Datadog, Terraform, Ansible</li>
+                          <li>AWS</li>
+                          <li>MySql, Redise</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </li>
 
                   <li className="list-group-item">
                     <div className="text-light">

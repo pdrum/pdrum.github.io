@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import {graphql} from "gatsby";
 import BlogListItem from "../components/BlogListItem";
 import {Container} from "react-bootstrap";
+import HtmlHead from "../components/HtmlHead";
 
 export default function blog({data}) {
   const frontmatters = data.allMarkdownRemark.nodes.map(markdown => markdown.frontmatter)
@@ -28,3 +29,5 @@ query AllMarkdownsQuery {
     }
   }
 }`
+
+export const Head = () => <HtmlHead/>

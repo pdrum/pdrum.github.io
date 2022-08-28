@@ -4,6 +4,7 @@ import {Badge} from "react-bootstrap"
 import * as styles from '../styles/index.module.css'
 import '../styles/global.css'
 import Layout from "../layout/Layout";
+import HtmlHead from "../components/HtmlHead";
 
 export default function Home() {
   return <Layout>
@@ -437,3 +438,5 @@ export default function Home() {
     </div>
   </Layout>
 }
+
+export const Head = () => <HtmlHead/>

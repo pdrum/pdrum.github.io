@@ -41,6 +41,7 @@ site a developer-ish look and feel.
 
 For listing my medium publication I found this Gatsby source called [gatsby-source-medium](https://www.gatsbyjs.com/plugins/gatsby-source-medium/)
 and for adding meta tags to my page I used [gatsby-plugin-react-helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/)
+and [this](https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/) documentation page
 For YouTube I didn't find any source plugin. So I'll be going to do my own HTML and CSS 
 and insert each video into my website manually as I publish on YouTube.
 

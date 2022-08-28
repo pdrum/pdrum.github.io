@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from "../layout/Layout";
 import * as styles from "../styles/404.module.css";
 import {FaExclamationCircle} from "react-icons/all";
+import HtmlHead from "../components/HtmlHead";
 
 export default function notFound() {
   return <Layout>
@@ -21,3 +22,5 @@ export default function notFound() {
     </div>
   </Layout>
 }
+
+export const Head = () => <HtmlHead/>

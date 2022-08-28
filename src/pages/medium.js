@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import {graphql} from "gatsby";
 import MediumPost from "../components/MediumPost";
 import {Container} from "react-bootstrap";
+import HtmlHead from "../components/HtmlHead";
 
 export default function medium({data}) {
   return <Layout>
@@ -44,3 +45,5 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = () => <HtmlHead/>

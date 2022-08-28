@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import {Card, Container} from "react-bootstrap";
 import {graphql} from "gatsby";
 import * as styles from '../styles/blog-post.module.css'
+import HtmlHead from "../components/HtmlHead";
 
 export default function blogPost({ data }) {
   const { html } = data.markdownRemark
@@ -31,3 +32,5 @@ export const query = graphql`
     }
   }
 `
+
+export const Head = () => <HtmlHead/>

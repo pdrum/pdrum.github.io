@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from "../layout/Layout";
 import * as styles from '../styles/resume.module.css'
 import {FaFilePdf} from "react-icons/all";
+import HtmlHead from "../components/HtmlHead";
 
 export default function Resume() {
   return <Layout>
@@ -22,3 +23,5 @@ export default function Resume() {
     </div>
   </Layout>
 }
+
+export const Head = () => <HtmlHead/>

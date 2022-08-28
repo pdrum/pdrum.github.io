@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from "../layout/Layout";
+import HtmlHead from "../components/HtmlHead";
 
 export default function medium() {
   return <Layout>
@@ -10,3 +11,5 @@ export default function medium() {
     </div>
   </Layout>
 }
+
+export const Head = () => <HtmlHead/>

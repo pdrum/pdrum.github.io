@@ -48,6 +48,12 @@ For styling my pages I used a global stylesheet for more general things
 but used `css modules` which came out of the box with Gatsby. It was my
 first time using `css modules`.
 
+I ended up publishing the site on [Netlify](https://www.netlify.com/) as it
+was harder than I expected to actually do it on Github Pages. Then after
+defining my custom domain in netlify through its UI, I 
+went to Godaddy and defined an `A` record that points the root directory
+of my domain to `75.2.60.5` and points `www` to `apex-loadbalancer.netlify.com`.
+
 # Notes
 These are a couple of things I came across which are worthy of attention IMO.
 

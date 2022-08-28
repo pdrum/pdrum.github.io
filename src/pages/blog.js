@@ -1,10 +1,24 @@
 import React from 'react'
 import Layout from "../layout/Layout";
 import {graphql} from "gatsby";
+import BlogListItem from "../components/BlogListItem";
 
-export default function medium() {
+export default function blog({data}) {
   return <Layout>
-    Blog posts go here
+    <div>
+      {
+        data.allMarkdownRemark.nodes.forEach(markdown =>
+            <BlogListItem
+                createdAt={markdown.frontmatter.createdAt}
+                title={markdown.frontmatter.title}
+                thumbnailUrl={markdown.frontmatter.thumbnailUrl}
+                slug={markdown.frontmatter.slug}
+                excerpt={markdown.frontmatter.excerpt}
+                key={markdown.frontmatter.slug}
+            />
+        )
+      }
+    </div>
   </Layout>
 }
 
@@ -14,7 +28,7 @@ query AllMarkdownsQuery {
     nodes {
       frontmatter {
         date
-        image
+        thumbnailUrl
         slug
         title
         excerpt

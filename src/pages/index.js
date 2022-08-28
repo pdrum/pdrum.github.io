@@ -71,7 +71,7 @@ export default function Home() {
                       is a delivery company operating in more than 20 countries
                       based in Barcelona.
                     </p>
-                    <p>
+                    <div>
                       Projects:<br/>
                       <ul>
                         <li>
@@ -93,8 +93,8 @@ export default function Home() {
                           to handle Glovo express orders
                         </li>
                       </ul>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                       Tech Stack:<br/>
                       <ul>
                         <li>Java, Kotlin, Spring Boot</li>
@@ -102,7 +102,7 @@ export default function Home() {
                         <li>AWS</li>
                         <li>MySql, Redise</li>
                       </ul>
-                    </p>
+                    </div>
                   </div>
                 </li>
 
@@ -123,7 +123,7 @@ export default function Home() {
                         (Cafebazaar)</a>
                       Information Technology Development Group.
                     </p>
-                    <p>
+                    <div>
                       Projects:<br/>
                       <ul>
                         <li> Increased team agility and user satisfaction by
@@ -137,8 +137,8 @@ export default function Home() {
                           systems.
                         </li>
                       </ul>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                       Tech Stack:<br/>
                       <ul>
                         <li> Kotlin & Java, Golang, Python/Django</li>
@@ -148,7 +148,7 @@ export default function Home() {
                         <li> Kafka, RabbitMQ</li>
                         <li> Redis, Postgres</li>
                       </ul>
-                    </p>
+                    </div>
                   </div>
                 </li>
 
@@ -178,7 +178,7 @@ export default function Home() {
                         and
                         picking the best ETA provider, and sending SMS.
                       </p>
-                      <p>
+                      <div>
                         Tech Stack:<br/>
                         <ul>
                           <li>Go</li>
@@ -188,7 +188,7 @@ export default function Home() {
                           <li>Kafka, RabbitMQ</li>
                           <li>Postgres, Redis</li>
                         </ul>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </li>
@@ -270,12 +270,12 @@ export default function Home() {
                         Helped port parts of the backend of a game from Django
                         to Java.
                       </p>
-                      <p>
+                      <div>
                         Tech Stack:<br/>
                         <ul>
                           <li>Java, Jersey, Dropwizard</li>
                         </ul>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </li>
@@ -294,12 +294,12 @@ export default function Home() {
                         Extended our corporate Email solution with the option of
                         sending/receiving SMS messages.
                       </p>
-                      <p>
+                      <div>
                         Tech Stack:<br/>
                         <ul>
                           <li>Java, Spring Boot</li>
                         </ul>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </li>
@@ -333,7 +333,7 @@ export default function Home() {
         <section className="card text-light bg-secondary m-3">
           <div className="card-header"><h3>Skills</h3></div>
           <div className="card-body">
-            <p className="card-text text-light">
+            <p className="card-text text-light text-center">
               <Badge bg="dark" className={styles.skillBadge}>Software
                 Architecture</Badge>
               <Badge bg="dark" className={styles.skillBadge}>Go</Badge>

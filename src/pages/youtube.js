@@ -3,8 +3,10 @@ import Layout from "../layout/Layout";
 
 export default function medium() {
   return <Layout>
-    <div className="alert alert-success" role="alert">
-      My Youtube videos will appear here.
+    <div className="text-center">
+      <div className="alert alert-success" role="alert" style={{margin: '20px'}}>
+        My Youtube videos will appear here.
+      </div>
     </div>
   </Layout>
 }

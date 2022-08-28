@@ -5,3 +5,12 @@
 .nav-link {
   color: var(--bs-link-color);
 }
+
+.navbar-toggler-icon:after {
+  content:"Menu";
+  left:80px;
+  top:16px;
+  position:absolute;
+  width:50px;
+  color: var(--bs-secondary);
+}

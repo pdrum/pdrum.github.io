@@ -320,8 +320,7 @@ export default function Home() {
                       also wrote a book
                       consisting
                       of a collection of general chemistry problems which is
-                      going to be published by
-                      IRYSC publication this year.
+                      published by the IRYSC publication.
                     </div>
                   </div>
                 </li>

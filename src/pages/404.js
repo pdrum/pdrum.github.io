@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../layout/Layout";
 import * as styles from "../styles/404.module.css";
-import {FaExclamation, FaExclamationCircle, FaFilePdf} from "react-icons/all";
+import {FaExclamationCircle} from "react-icons/all";
 
 export default function notFound() {
   return <Layout>

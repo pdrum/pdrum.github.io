@@ -1,0 +1,14 @@
+.post-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: calc(var(--bs-gutter-y) * .5);
+  padding-bottom: calc(var(--bs-gutter-y) * .5);
+}
+
+.blog-banner {
+  display: block;
+  max-height:400px;
+  width: auto;
+  height: auto;
+  margin: 20px auto;
+}

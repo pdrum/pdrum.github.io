@@ -2,20 +2,23 @@ import React from 'react'
 import Layout from "../layout/Layout";
 import {graphql} from "gatsby";
 import MediumPost from "../components/MediumPost";
+import {Container} from "react-bootstrap";
 
 export default function medium({data}) {
   return <Layout>
-    {data.allMediumPost.edges.map(({node}) =>
-        <MediumPost
-            title={node.title}
-            subtitle={node.virtuals.subtitle}
-            readingTime={node.virtuals.readingTime}
-            imageId={node.virtuals.previewImage.imageId}
-            createdAt={node.createdAt}
-            uniqueSlug={node.uniqueSlug}
-            key={node.uniqueSlug}
-        />
-    )}
+    <Container>
+      {data.allMediumPost.edges.map(({node}) =>
+          <MediumPost
+              title={node.title}
+              subtitle={node.virtuals.subtitle}
+              readingTime={node.virtuals.readingTime}
+              imageId={node.virtuals.previewImage.imageId}
+              createdAt={node.createdAt}
+              uniqueSlug={node.uniqueSlug}
+              key={node.uniqueSlug}
+          />
+      )}
+    </Container>
   </Layout>
 }
 

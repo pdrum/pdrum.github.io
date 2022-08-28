@@ -12,3 +12,7 @@
 .icon :hover {
   color: #b58900
 }
+
+.icon {
+  color: var(--bs-success);
+}

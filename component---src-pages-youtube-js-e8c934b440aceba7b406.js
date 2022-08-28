@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[879],{2456:function(e,t,r){r.r(t),r.d(t,{default:function(){return u}});var l=r(7294),n=r(5270);function u(){return l.createElement(n.Z,null)}}}]);
+//# sourceMappingURL=component---src-pages-youtube-js-e8c934b440aceba7b406.js.map

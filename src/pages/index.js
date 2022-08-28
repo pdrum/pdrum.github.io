@@ -118,7 +118,7 @@ export default function Home() {
                          href="https://cafebazaar.ir/app/ir.balad?l=en">Balad
                         Maps</a>
                       is Iran's leading map and navigation platform
-                      with more than 4 million users. A product of
+                      with more than 10 million users. A product of
                       <a className="text-dark"
                          href="https://www.linkedin.com/company/hezardastan-group/">Hezardastan
                         (Cafebazaar)</a>
@@ -372,6 +372,9 @@ export default function Home() {
               <ul className="list-group">
                 <li className="list-group-item text-light">English: Full
                   professional
+                  proficiency
+                </li>
+                <li className="list-group-item text-light">Spanish: Limited Working
                   proficiency
                 </li>
                 <li className="list-group-item text-light">Persian: Native

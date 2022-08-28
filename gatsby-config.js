@@ -6,5 +6,12 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@pedram.esmaeeli`,
+      },
+    },
+  ],
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import '../../static/bootstrap.min.css'
-import {Col, Container, Row} from "react-bootstrap"
+import {Badge, Col, Container, Row} from "react-bootstrap"
 import * as styles from '../styles/index.module.css'
 import Sidebar from "../components/Sidebar";
 import '../styles/global.css'
@@ -14,11 +14,12 @@ export default function Home() {
       </Col>
       <Col lg={9} className="bg-secondary">
         <MyNavbar/>
-        <div className={styles.content}>
+        <div className={`${styles.content} text-light`}>
           <section className="card text-light bg-secondary m-3">
-            <div className="card-header"><h3>Summary</h3></div>
-            <div className="card-body">
-              <p className="card-text">
+            <div className="card-header"><h3 className="text-light">Summary</h3>
+            </div>
+            <div className="card-body text-light">
+              <p className="card-text text-light">
                 I'm a passionate software engineer, opting for
                 delivery of maintainable, reliable software that also meets the
                 deadlines.
@@ -36,10 +37,10 @@ export default function Home() {
 
 
           <section className="card text-light bg-secondary m-3">
-            <div className="card-header"><h3>Education</h3></div>
+            <div className="card-header text-light"><h3>Education</h3></div>
             <div className="card-body">
               <p className="card-text">
-                <table className="text-light">
+                <table className={`${styles.eduTable} text-light`}>
                   <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -55,7 +56,7 @@ export default function Home() {
                     <td>2014</td>
                     <td>2019</td>
                     <td>Sharif University of Technology</td>
-                    <td>Software Engineering</td>
+                    <td>Software Engineering (BEng degree)</td>
                   </tr>
                   </tbody>
                 </table>
@@ -63,36 +64,56 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="card text-light bg-secondary m-3">
+          <section className={`card text-light bg-secondary m-3 ${styles.experience}`}>
             <div className="card-header"><h3>Experiences</h3></div>
             <div className="card-body">
               <div className="card-text">
                 <ul className="list-group">
 
                   <li className="list-group-item">
-                    <div>
+                    <div className="text-light">
                       <h3>
-                        Software Engineer at Cafe Bazaar <br/>
-                        <small>Oct 2019 till now</small>
+                        Software Engineer at Balad (Hezardastan Group) <br/>
+                        <small>Oct 2019 till May 2021</small>
                       </h3>
                       <p>
-                        Cafe Bazaar is a leading consumer internet company in
-                        Iran that runs the first
-                        and the most popular smartphone application marketplace
-                        for Persian speaking countries.
-                        It connects millions of smartphone users, advertisers
-                        and application developers through
-                        its highly scalable and technology-based platforms such
-                        as Bazaar app store,
-                        Divar a platform for classified advertisements and newly
-                        launched
-                        Balad a navigation and maps application.
+                        <a className="text-dark" href="https://cafebazaar.ir/app/ir.balad?l=en">Balad Maps</a>
+                        is Iran's leading map and navigation platform
+                        with more than 4 million users. A product of
+                        <a className="text-dark" href="https://www.linkedin.com/company/hezardastan-group/">Hezardastan (Cafebazaar)</a>
+                        Information Technology Development Group.
+                      </p>
+                      <p>
+                        Projects:<br/>
+                        <ul>
+                          <li> Increased team agility and user satisfaction by
+                            rewriting then improving the navigation engine.
+                          </li>
+                          <li> Devised solutions for automatically and
+                            continuously doing quality assurance, guaranteeing
+                            safer release of the navigation engine.
+                          </li>
+                          <li> Developed crowd-sourcing and feedback aggregation
+                            systems.
+                          </li>
+                        </ul>
+                      </p>
+                      <p>
+                        Tech Stack:<br/>
+                        <ul>
+                          <li> Kotlin & Java, Golang, Python/Django</li>
+                          <li> Ansible, Docker Swarm, GitlabCI, Grafana,
+                            Prometheus, StatsD
+                          </li>
+                          <li> Kafka, RabbitMQ</li>
+                          <li> Redis, Postgres</li>
+                        </ul>
                       </p>
                     </div>
                   </li>
 
                   <li className="list-group-item">
-                    <div>
+                    <div className="text-light">
                       <h3>
                         Software Engineer at Snapp <br/>
                         <small>May 2019 till Oct 2019</small>
@@ -100,75 +121,75 @@ export default function Home() {
 
                       <div>
                         <p>
-                          Snapp is the first and leading mobile and web-based
-                          ride-hailing platform in
-                          Iran. Its mission is to enhance the effectiveness,
-                          efficiency and quality of
-                          urban transportation in Iran, through exceptional
-                          software and service
-                          capabilities. Within 4 years, it has welcomed more
-                          than 20 million customers
-                          and 1 million drivers to the family. At more than 2
-                          million rides per day,
-                          it is also the largest and fastest growing internet
-                          company in the
-                          Middle East.
+                          With more than 20 million customers, 1 million
+                          drivers,
+                          and 2 million rides per day,
+                          <a className="text-dark" href="https://cafebazaar.ir/app/cab.snapp.passenger?l=en">Snapp</a>
+                          is the first and
+                          leading mobile
+                          and web-based ride-hailing platform in Iran.
                         </p>
                         <p>
-                          In Snapp I work as a software engineer in a great team
-                          that develops and
-                          maintains high quality software delivered as
-                          microservices written in
-                          golang.
+                          Projects:<br/>
+                          Crafted services for balancing supply and demand
+                          through
+                          making adjustments to prices, dynamically comparing
+                          and
+                          picking the best ETA provider, and sending SMS.
+                        </p>
+                        <p>
+                          Tech Stack:<br/>
+                          <ul>
+                            <li>Go</li>
+                            <li>GitlabCI, Prometheus, Grafana, Openshift,
+                              Kubernetes
+                            </li>
+                            <li>Kafka, RabbitMQ</li>
+                            <li>Postgres, Redis</li>
+                          </ul>
                         </p>
                       </div>
                     </div>
                   </li>
 
                   <li className="list-group-item">
-                    <div>
+                    <div className="text-light">
                       <h3>
                         Software Engineer at Miare <br/>
                         <small>May 2017 till May 2019</small>
                       </h3>
 
-                      <div>
-                        <p>
-                          Miare is a B2B food delivery company. It provides
-                          restaurants with a panel
-                          through which they can ask for a courier to deliver
-                          their food to their
-                          customers.
-                        </p>
-                        <p>
-                          In Miare I was a member of a highly talented, vibrant
-                          team, working on
-                          development and maintenance of aforementioned product
-                          which had complex
-                          technical, financial and operational aspects. My
-                          responsibilities
-                          mostly consisted of proposing suitable technical and
-                          architectural solutions
-                          for business requirements and developing backend code.
-                          In Miare we had two
-                          different codebases responsible for different aspects
-                          of the system, they
-                          had some
-                          realtime features implemented using websockets and a
-                          lot of REST-based
-                          endpoints. Both codebases had good test-coverage,
-                          leveraged CI, CD and were
-                          highly maintainable. I've done a massive refactoring
-                          and basically rewritten
-                          most of the GO codebase, and have developed a large
-                          portion of the Django
-                          code.
-                        </p>
+                      <div className="text-light">
+                          <p>
+                            <a className="text-dark" href="https://landing.miare.ir/">Miare</a> is a B2B food delivery company that
+                            restaurants
+                            use for outsourcing their food delivery process.
+                          </p>
+
+                          Projects:<br/>
+                          <p>
+                            Having joined the company in its very early days,
+                            I played a key role in its transition to an
+                            established
+                            business by adding new subsystems, debugging highly
+                            sophisticated code,
+                            refactoring huge legacy codebases, and leading the
+                            way
+                            for designing new architectures of its new
+                            initiatives.
+                          </p>
+
+                          Tech Stack:<br/>
+                          <ul>
+                            <li>Golang, Python/Django, Celery</li>
+                            <li>Redis, Postgres</li>
+                            <li>Ansible, GitlabCI</li>
+                          </ul>
                       </div>
                     </div>
                   </li>
                   <li className="list-group-item">
-                    <div>
+                    <div className="text-light">
                       <h3>
                         Member of Methodology Engineering Lab at Sharif
                         University of Technology<br/>
@@ -183,59 +204,61 @@ export default function Home() {
                     </div>
                   </li>
                   <li className="list-group-item">
-                    <div>
+                    <div className="text-light">
                       <h3>
                         Junior Java Developer at Idek<br/>
                         <small>Jun 2016 till Feb 2017</small>
                       </h3>
 
                       <div>
-                        I contributed to development of some REST APIs and an
-                        admin panel for an online
-                        realtime game called Boom with over 50k users. The
-                        project was done using a java
-                        framework called Dropwizard and its modules including
-                        jersey, hibernate,
-                        freemarker,
-                        etc. For the admin panel I used HTML, bootstrap and
-                        jquery in addition to
-                        aforementioned technologies.
-                        The game is available at
-                        <a className="text-light"
-                           href="https://cafebazaar.ir/app/ir.idek.boom/?l=en">
-                          https://cafebazaar.ir/app/ir.idek.boom/?l=en
-                        </a>
+                        <p>
+                          Idek was a very small software development company.
+                          Started working there in the summer and in accordance
+                          with our initial agreement left after a few months to
+                          concentrate on university studies.
+                          <span style={{marginRight: "5px"}}/>
+                          <a className="text-dark"
+                             href="https://cafebazaar.ir/app/ir.idek.boom/?l=en">
+                            Here
+                          </a> is the game I was working on.
+                        </p>
+                        <p>
+                          Projects:<br/>
+                          Helped port parts of the backend of a game from Django
+                          to Java.
+                        </p>
+                        <p>
+                          Tech Stack:<br/>
+                          <ul>
+                            <li>Java, Jersey, Dropwizard</li>
+                          </ul>
+                        </p>
                       </div>
                     </div>
                   </li>
                   <li className="list-group-item">
-                    <div>
+                    <div className="text-light">
                       <h3>
                         Junior Java Developer at Elenoon<br/>
                         <small>Aug 2015 till Nov 2015</small>
                       </h3>
 
                       <div>
-                        I developed REST APIs using Spring framework. During my
-                        collaboration, I
-                        contributed
-                        to two projects. One was called SMS panel which provided
-                        SMS support integrated
-                        with
-                        their Email service and the other was Senfi. The latter
-                        was a website through
-                        which
-                        companies could publish advertisements and other users
-                        could see those
-                        advertisements and comment on them through their mobile
-                        devices. I worked there
-                        as a
-                        complete novice and it was my first serious work
-                        experience.
+                        <p>Elenoon was a company, developing enterprise solutions such as mail service.</p>
+                        <p>
+                          Projects:<br/>
+                          Extended our corporate Email solution with the option of sending/receiving SMS messages.
+                        </p>
+                        <p>
+                          Tech Stack:<br/>
+                          <ul>
+                            <li>Java, Spring Boot</li>
+                          </ul>
+                        </p>
                       </div>
                     </div>
                   </li>
-                  <li className="list-group-item">
+                  <li className="list-group-item text-light">
                     <div>
                       <h3>
                         Chemistry Teacher at Mouood, Imam Sadeq, Allame Helli11,
@@ -265,57 +288,23 @@ export default function Home() {
           <section className="card text-light bg-secondary m-3">
             <div className="card-header"><h3>Skills</h3></div>
             <div className="card-body">
-              <p className="card-text">
-                <table className="text-light">
-                  <thead>
-                  <tr>
-                    <th scope="col">Title</th>
-                    <th scope="col">Description</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>Patterns and agile methodologies</td>
-                    <td>
-                      My activities in Methodology Engineering Lab mostly
-                      revolved around these topics and I
-                      have a good enough knowledge of them.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Server-side programming</td>
-                    <td>
-                      I have developed thousands of lines of high-quality,
-                      well-tested and maintainable code
-                      using multiple programming languages including Python,
-                      Java, Go, Kotlin, etc. For doing
-                      so I have used many frameworks and technologies including
-                      Django, Spring, Dropwizard,
-                      Ktor, Hibernate, Gradle, Maven, Glide, Gorm, Echo,
-                      Gorilla, Docker, etc.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Client-side programming</td>
-                    <td>
-                      I have basic familiarity and have done some relatively
-                      small projects using
-                      frontend web-development technologies including react,
-                      bootstrap, etc.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Android programming</td>
-                    <td>
-                      I have basic familiarity with Android development. I have
-                      done some small projects and I
-                      am
-                      recently working on developing a multiplayer online game
-                      as a side project.
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
+              <p className="card-text text-light">
+                <Badge bg="dark" className={styles.skillBadge}>Software
+                  Architecture</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>Go</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>Kotlin</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>Java</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>Python</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>Spring</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>Django</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>Linux</Badge>
+                <Badge bg="dark"
+                       className={styles.skillBadge}>Javascript</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>React</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>Git</Badge>
+                <Badge bg="dark" className={styles.skillBadge}>AWS</Badge>
+                <Badge bg="dark"
+                       className={styles.skillBadge}>Kubernetes</Badge>
               </p>
             </div>
           </section>
@@ -335,10 +324,13 @@ export default function Home() {
             <div className="card-body">
               <p className="card-text">
                 <ul className="list-group">
-                  <li className="list-group-item">English: Full professional
+                  <li className="list-group-item text-light">English: Full
+                    professional
                     proficiency
                   </li>
-                  <li className="list-group-item">Persian: Native language</li>
+                  <li className="list-group-item text-light">Persian: Native
+                    language
+                  </li>
                 </ul>
               </p>
             </div>
@@ -348,7 +340,7 @@ export default function Home() {
             <div className="card-header"><h3>Contact</h3></div>
             <div className="card-body">
               <p className="card-text">
-                <table className="text-light">
+                <table className={`text-light ${styles.contactTable}`}>
                   <thead>
                   <tr>
                     <th scope="col">Title</th>
@@ -400,5 +392,5 @@ export default function Home() {
       </Col>
     </Row>
   </Container>
-;
+      ;
 }

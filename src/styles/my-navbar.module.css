@@ -2,6 +2,10 @@
   margin: 10px;
 }
 
+.toggle-button {
+  margin-bottom: 15px;
+}
+
 .navbar-item button {
   width: 160px;
 }

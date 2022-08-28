@@ -1,0 +1,10 @@
+.not-found-container {
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.icon-container {
+  font-size: 100px;
+  background-color: var(--bs-card-cap-bg);
+  padding-bottom: 20px;
+}

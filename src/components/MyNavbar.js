@@ -14,10 +14,10 @@ export default function MyNavbar() {
           <Navbar.Collapse>
             <Nav className="mx-auto">
               <NavbarItem linkAddress="/" text="Home" ><FaHome/></NavbarItem>
-              <NavbarItem linkAddress="" text="Medium"><FaMedium/></NavbarItem>
-              <NavbarItem linkAddress="" text="Youtube"><FaYoutube/></NavbarItem>
-              <NavbarItem linkAddress="" text="Blog"><FaBlog/></NavbarItem>
-              <NavbarItem linkAddress="" text="Resume"><FaBlog/></NavbarItem>
+              <NavbarItem linkAddress="/medium" text="Medium"><FaMedium/></NavbarItem>
+              <NavbarItem linkAddress="/youtube" text="Youtube"><FaYoutube/></NavbarItem>
+              <NavbarItem linkAddress="/blog" text="Blog"><FaBlog/></NavbarItem>
+              <NavbarItem linkAddress="/resume" text="Resume"><FaBlog/></NavbarItem>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -21,7 +21,7 @@ export default function MediumPost({
         read)
       </p>
       <div>
-        <a href={`${MEDIUM_URL}/@pedram.esmaeeli/${uniqueSlug}`}
+        <a href={`${MEDIUM_URL}/@pedram.esmaeeli/${uniqueSlug}`} rel="noreferrer"
            className="card-link"
            target="_blank"
         >

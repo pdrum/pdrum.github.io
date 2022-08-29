@@ -404,8 +404,8 @@ export default function Home() {
                 </tr>
                 <tr>
                   <td>Phone</td>
-                  <td><a href="tel:+989368489804"
-                         className="text-light">+989368489804</a></td>
+                  <td><a href="tel:+34678908921"
+                         className="text-light">+34678908921</a></td>
                 </tr>
                 <tr>
                   <td>Website</td>

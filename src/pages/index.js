@@ -409,8 +409,8 @@ export default function Home() {
                 </tr>
                 <tr>
                   <td>Website</td>
-                  <td><a href="https://pdrum.github.io"
-                         className="text-light">https://pdrum.github.io</a>
+                  <td><a href="https://pedram.es"
+                         className="text-light">https://pedram.es</a>
                   </td>
                 </tr>
                 <tr>

@@ -84,6 +84,13 @@ export default function medium() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen/>
               </Col>
+              <Col lg={4}>
+                <iframe
+                    src="https://www.youtube.com/embed/DTQnk_f4coQ"
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen/>
+              </Col>
             </Row>
           </Card.Body>
         </Card>

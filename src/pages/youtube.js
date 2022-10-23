@@ -91,6 +91,27 @@ export default function medium() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen/>
               </Col>
+              <Col lg={4}>
+                <iframe
+                    src="https://www.youtube.com/embed/Hk13eo63ZUU"
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen/>
+              </Col>
+              <Col lg={4}>
+                <iframe
+                    src="https://www.youtube.com/embed/njmD7gwU7Pg"
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen/>
+              </Col>
+              <Col lg={4}>
+                <iframe
+                    src="https://www.youtube.com/embed/UmF7l6hyA8I"
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen/>
+              </Col>
             </Row>
           </Card.Body>
         </Card>

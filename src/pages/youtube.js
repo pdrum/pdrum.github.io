@@ -58,7 +58,7 @@ export default function medium() {
               </Col>
               <Col lg={4}>
                 <iframe
-                    src="https://www.youtube.com/embed/37qY7vQlv8s"
+                    src="https://www.youtube.com/embed/fgT7x1W9JVM"
                     title="YouTube video player" frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen/>

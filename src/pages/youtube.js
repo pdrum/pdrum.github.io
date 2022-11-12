@@ -6,9 +6,9 @@ import * as styles from "../styles/youtube.module.css"
 
 export default function medium() {
   return <Layout>
-    <div className={`${styles.youtubeCard} text-center bg-secondary`}>
+    <div className={`${styles.youtubeContainer} text-center bg-secondary`}>
       <Container>
-        <Card>
+        <Card className={`${styles.youtubePlaylist}`}>
           <Card.Header className="text-dark">
             <Card.Title>Object Oriented Design with Spring</Card.Title>
           </Card.Header>
@@ -108,6 +108,23 @@ export default function medium() {
               <Col lg={4}>
                 <iframe
                     src="https://www.youtube.com/embed/UmF7l6hyA8I"
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen/>
+              </Col>
+            </Row>
+          </Card.Body>
+        </Card>
+        <Card>
+
+          <Card.Header className="text-dark">
+            <Card.Title>Spring</Card.Title>
+          </Card.Header>
+          <Card.Body>
+            <Row>
+              <Col lg={4}>
+                <iframe
+                    src="https://www.youtube.com/embed/QpwpyHFKYaA"
                     title="YouTube video player" frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen/>

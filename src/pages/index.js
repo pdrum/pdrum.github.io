@@ -69,8 +69,7 @@ export default function Home() {
                     <p>
                       <a className="text-dark"
                          href="https://glovoapp.com">Glovo</a>
-                      is a delivery company operating in more than 20 countries
-                      based in Barcelona.
+                      is a delivery company operating in over 20 countries based in Barcelona.
                     </p>
                     <div>
                       Projects:<br/>

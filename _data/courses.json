@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Java 101",
+    "subtitle": "Learn the basics of Java programming",
+    "image": "assets/images/java101.svg",
+    "slug": "java-101",
+    "pages": [
+      {
+        "title": "Introduction to Java",
+        "file": "intro.md"
+      },
+      {
+        "title": "Variables in Java",
+        "file": "variables.md"
+      }
+    ]
+  }
+]

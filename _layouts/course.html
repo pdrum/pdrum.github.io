@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 d-none d-md-block bg-light sidebar">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">🏠 Home</a>
+                </li>
+                {% for page in site.data.courses[0].pages %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ page.file }}">{{ page.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-9">
+            <h1>{{ page.title }}</h1>
+            {{ content }}
+        </main>
+    </div>
+</div>

@@ -33,9 +33,44 @@ layout: default
 
         <!-- Main Content -->
         <main class="col-md-9 col-lg-10">
-            <h1 class="course-title p-3 bg-light text-dark">{{ page.title }}</h1>
+<!--            <h1 class="course-title p-3 bg-dark text-white">{{ page.title }}</h1>-->
+
+            <div class="d-flex justify-content-between align-items-center my-3">
+                <!-- Previous Page -->
+                {% if page.previous_page %}
+                <a href="{{ page.previous_page }}" class="btn btn-primary">← Previous</a>
+                {% else %}
+                <button class="btn btn-outline-secondary disabled">← Previous</button>
+                {% endif %}
+
+                <!-- Course Title -->
+                <h1 class="text-center flex-grow-1">{{ page.title }}</h1>
+
+                <!-- Next Page -->
+                {% if page.next_page %}
+                <a href="{{ page.next_page }}" class="btn btn-primary">Next →</a>
+                {% else %}
+                <button class="btn btn-outline-secondary disabled">Next →</button>
+                {% endif %}
+            </div>
+
             <div class="lesson-content p-4">
                 {{ content }}
+            </div>
+            <div class="d-flex justify-content-between align-items-center my-3">
+                <!-- Previous Page -->
+                {% if page.previous_page %}
+                <a href="{{ page.previous_page }}" class="btn btn-primary">← Previous</a>
+                {% else %}
+                <button class="btn btn-outline-secondary disabled">← Previous</button>
+                {% endif %}
+
+                <!-- Next Page -->
+                {% if page.next_page %}
+                <a href="{{ page.next_page }}" class="btn btn-primary">Next →</a>
+                {% else %}
+                <button class="btn btn-outline-secondary disabled">Next →</button>
+                {% endif %}
             </div>
         </main>
     </div>

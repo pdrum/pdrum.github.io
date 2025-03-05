@@ -7,11 +7,11 @@
     "pages": [
       {
         "title": "Introduction to Java",
-        "file": "intro.md"
+        "file": "01-intro.md"
       },
       {
         "title": "Variables in Java",
-        "file": "variables.md"
+        "file": "02-variables.md"
       }
     ]
   }

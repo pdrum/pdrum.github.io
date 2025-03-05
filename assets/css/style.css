@@ -8,6 +8,10 @@
     padding: 10px;
 }
 
+main {
+    margin-bottom: 50px
+}
+
 .footer a {
     color: #2aa198;
     text-decoration: none;
@@ -16,4 +20,60 @@
 
 .footer a:hover {
     color: #b58900;
+}
+
+/* Sidebar Full Height on Large Screens */
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh; /* Full viewport height */
+        overflow-y: auto;
+        background-color: #002b36; /* Matches header */
+        padding-top: 56px; /* Adjust for navbar height */
+    }
+    main {
+        margin-left: 250px; /* Adjust to match sidebar width */
+    }
+}
+
+/* Mobile: Collapsed - Only Show the Hamburger Button */
+@media (max-width: 767px) {
+    /* Fixed hamburger menu in the top-left corner */
+    .btn-dark {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1050;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+    }
+
+    /* Sidebar should be hidden when collapsed */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px; /* Sidebar width */
+        height: 100vh;
+        background-color: #002b36; /* Same as header */
+        overflow-y: auto;
+        z-index: 1051;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%); /* Hidden by default */
+    }
+
+    /* When expanded, the sidebar slides in */
+    .sidebar.show {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 767px) {
+    #site-title {
+        display: none;
+    }
 }

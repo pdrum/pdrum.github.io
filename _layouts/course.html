@@ -2,26 +2,41 @@
 layout: default
 ---
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <!-- Sidebar -->
-        <nav class="col-md-3 d-none d-md-block bg-light sidebar">
-            <ul class="nav flex-column">
+        <!-- Always Visible Fixed Hamburger Menu on Small Screens -->
+        <button class="btn btn-dark d-md-none position-fixed top-0 start-0 m-2" type="button" data-bs-toggle="collapse" data-bs-target="#courseSidebar" aria-controls="courseSidebar" aria-expanded="false" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <!-- Sidebar (Overlay on Small Screens, Fixed on Large Screens) -->
+        <nav class="col-md-3 col-lg-2 bg-dark text-white sidebar collapse d-md-block position-md-fixed" id="courseSidebar">
+            <ul class="nav flex-column p-3">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/">🏠 Home</a>
+                    <a class="nav-link text-white" href="/">🏠 Home</a>
                 </li>
-                {% for page in site.data.courses[0].pages %}
+                {% assign course_slug = page.course_slug %}
+                {% for course in site.data.courses %}
+                {% if course.slug == course_slug %}
+                {% for lesson in course.pages %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ page.file }}">{{ page.title }}</a>
+                    <a class="nav-link text-white {% if page.url contains lesson.file | replace: '.md', '/' %} active {% endif %}"
+                       href="/courses/{{ course.slug }}/{{ lesson.file | replace: '.md', '/' }}">
+                        {{ lesson.title }}
+                    </a>
                 </li>
+                {% endfor %}
+                {% endif %}
                 {% endfor %}
             </ul>
         </nav>
 
         <!-- Main Content -->
-        <main class="col-md-9">
-            <h1>{{ page.title }}</h1>
-            {{ content }}
+        <main class="col-md-9 col-lg-10">
+            <h1 class="course-title p-3 bg-dark text-white">{{ page.title }}</h1>
+            <div class="lesson-content p-4">
+                {{ content }}
+            </div>
         </main>
     </div>
 </div>

@@ -6,9 +6,15 @@ url: "https://pdrum.github.io"
 theme: minimal-mistakes-jekyll
 
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-redirect-from
 
 sass:
   custom: "/_sass/custom/solarized.scss"

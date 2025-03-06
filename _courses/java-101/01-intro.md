@@ -10,7 +10,11 @@ aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
 ex ea commodo consequat.
 
 ```java
-System.out.println("intro")
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
 ```
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna

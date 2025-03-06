@@ -24,26 +24,24 @@ main {
 
 /* Code Block Styling */
 pre {
-    background-color: #fdf6e3 !important; /* Solarized Light Background */
+    background-color: #fdf6e3 !important; /* Solarized Light */
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
     overflow-x: auto;
     font-size: 1rem;
-    color: black;
 }
 
 /* Inline Code */
 code {
     background-color: #eee8d5;
     padding: 2px 6px;
-    color: black;
     border-radius: 3px;
     font-family: "Courier New", monospace;
 }
 
-/* Code Block with Prism.js */
-pre[class*="language-"] {
+/* Make sure highlight.js applies styles */
+.hljs {
     background: #fdf6e3 !important;
     padding: 15px;
     border-radius: 8px;

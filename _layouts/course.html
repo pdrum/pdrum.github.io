@@ -42,10 +42,46 @@ layout: default
     </div>
 </nav>
 
-<!-- Main Course Content -->
+<!-- Navigation Arrows (Top) -->
 <div class="container mt-4">
-    <h1>{{ page.title }}</h1>
+    <div class="d-flex justify-content-between align-items-center my-3">
+        <!-- Previous Page -->
+        {% if page.previous_page %}
+        <a href="{{ page.previous_page }}" class="btn btn-outline-dark btn-primary">Previous</a>
+        {% else %}
+        <button class="btn btn-outline-secondary disabled">Previous</button>
+        {% endif %}
+
+        <!-- Course Title -->
+        <h1 class="text-center flex-grow-1">{{ page.title }}</h1>
+
+        <!-- Next Page -->
+        {% if page.next_page %}
+        <a href="{{ page.next_page }}" class="btn btn-outline-dark btn-primary">Next</a>
+        {% else %}
+        <button class="btn btn-outline-secondary disabled">Next</button>
+        {% endif %}
+    </div>
+
+    <!-- Course Content -->
     <div class="lesson-content">
         {{ content }}
+    </div>
+
+    <!-- Navigation Arrows (Bottom) -->
+    <div class="d-flex justify-content-between align-items-center my-3">
+        <!-- Previous Page -->
+        {% if page.previous_page %}
+        <a href="{{ page.previous_page }}" class="btn btn-outline-dark btn-primary">Previous</a>
+        {% else %}
+        <button class="btn btn-outline-secondary disabled">Previous</button>
+        {% endif %}
+
+        <!-- Next Page -->
+        {% if page.next_page %}
+        <a href="{{ page.next_page }}" class="btn btn-outline-dark btn-primary">Next</a>
+        {% else %}
+        <button class="btn btn-outline-secondary disabled">Next</button>
+        {% endif %}
     </div>
 </div>
